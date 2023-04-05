@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.1.final using JasperReports Library version 6.20.1-7584acb244139816654f64e2fd57a00d3e31921e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5cfc9f0c-9d17-4354-bbf9-1886a375993d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="firstName" class="java.lang.String"/>
+	<parameter name="lastName" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="560" height="86" backcolor="#435BA8" uuid="62b38f7f-89e6-49ad-842f-411628317e43"/>
+				<staticText>
+					<reportElement mode="Transparent" x="13" y="34" width="237" height="30" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="cd485811-f7ca-47bd-a16e-32d6a80b324f"/>
+					<textElement>
+						<font size="16"/>
+					</textElement>
+					<text><![CDATA[Nutrition Report]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="480" y="10" width="56" height="27" uuid="d97bc922-b04d-4dff-a423-99f97d3a852b"/>
+					<textFieldExpression><![CDATA[$P{firstName}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="470" y="50" width="74" height="36" uuid="e6a4f370-953b-493d-a70e-5b314b9121b5"/>
+					<textFieldExpression><![CDATA[$P{lastName}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="72" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
